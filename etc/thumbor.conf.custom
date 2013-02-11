@@ -1,0 +1,28 @@
+
+# the domains that can have their images resized
+# use an empty list for allow all sources
+#ALLOWED_SOURCES = ['mydomain.com']
+
+# the max width of the resized image
+# use 0 for no max width
+# if the original image is larger than MAX_WIDTH x MAX_HEIGHT,
+# it is proportionally resized to MAX_WIDTH x MAX_HEIGHT
+# MAX_WIDTH = 800
+
+# the max height of the resized image
+# use 0 for no max height
+# if the original image is larger than MAX_WIDTH x MAX_HEIGHT,
+# it is proportionally resized to MAX_WIDTH x MAX_HEIGHT
+# MAX_HEIGHT = 600
+
+# maximum size of the source image in Kbytes.
+# use 0 for no limit.
+# this is a very important measure to disencourage very
+# large source images.
+# THIS ONLY WORKS WITH http_loader.
+MAX_SOURCE_SIZE = 0
+
+# if you enable this, the unencryted URL will be available
+# to users.
+# SUITABLE FOR A VAGRANT BOX
+ALLOW_UNSAFE_URL = True

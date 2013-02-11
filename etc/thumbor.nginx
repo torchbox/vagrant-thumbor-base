@@ -1,0 +1,13 @@
+upstream thumbor {
+SERVER_STUB
+}
+
+server {
+    listen PORT;
+    server_name localhost;
+    merge_slashes off;
+
+    location / {
+        proxy_pass http://thumbor;
+    }
+}
