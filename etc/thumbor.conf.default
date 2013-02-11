@@ -59,9 +59,11 @@ REDIS_STORAGE_SERVER_DB = 0
 REDIS_STORAGE_SERVER_PASSWORD = None
 
 # imaging engine to use to process images
+# OpenCV will still be used for smart detection when PIL is the engine
+# but does not support flipping when used as the engine. 
 #ENGINE = 'thumbor.engines.graphicsmagick'
-#ENGINE = 'thumbor.engines.pil'
-ENGINE = 'thumbor.engines.opencv'
+ENGINE = 'thumbor.engines.pil'
+#ENGINE = 'thumbor.engines.opencv'
 
 # detectors to use to find Focal Points in the image
 # more about detectors can be found in thumbor's docs
