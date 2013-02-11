@@ -12,4 +12,4 @@ function msg {
     echo "vagrant box add $BOX_NAME $BOX" 
 }
 
-vagrant up && rm -f $BOX && vagrant package --output $BOX && msg
+vagrant up && rm -f $BOX && vagrant package --vagrantfile Vagrantfile.pkg --output $BOX && msg
