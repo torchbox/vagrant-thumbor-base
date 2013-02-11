@@ -10,4 +10,8 @@ server {
     location / {
         proxy_pass http://thumbor;
     }
+
+    location = /favicon.ico {
+        return 204;
+    }
 }
