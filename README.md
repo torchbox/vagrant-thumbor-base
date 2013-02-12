@@ -4,8 +4,7 @@ vagrant-thumbor-base
 A Vagrant box based on Ubuntu precise32, running [thumbor](https://github.com/globocom/thumbor) 
 built from the officially supported aptitude PPA.
 
-By default the box is configured to run four instances of thumbor, loaded balanced by nginx, with
-a redis storage backend.
+By default the box is configured to run four instances of thumbor, load balanced by nginx and a redis storage backend.
 
 Configuration
 -------------
@@ -14,7 +13,7 @@ can customise the installation.
 
 To customise the default configuration the `etc` directory contains:
 
-* `thumbor.conf.custom` for settings you're most likely to want to modify for your needs.
+* `thumbor.conf.custom` for settings you're most likely to want to modify.
 * `thumbor.port` to specify the port that the box will forward the service over (default 8888).
 * `thumbor.instances` to specify the number of instances nginx will load balance (default 4).
 * `thumbor.key` to specify the security key (up to 16 characters) used for signed URLs (default empty to generate a random key)
